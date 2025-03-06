@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Web App</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2cf21ec1bb.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <div class="first">
+            ThoughtFULL
+        </div>
+
+        <div class="search">
+            <div class="search-content">
+                <input type="text" id="search-text" placeholder="Search your posts...">
+            </div>
+            <div class="search-type">
+                <select id="search-filter">
+                    <option value="title">Title</option>
+                    <option value="author">Author's Email</option>
+                </select>
+            </div>
+            <div class="search-btn">
+                <button id="search-button"><i class="fa-solid fa-magnifying-glass" id="search-icon"></i></button>
+            </div>
+        </div>
+
+        <div class="second" style="margin-right: 0px; padding: 0px;">
+            <nav >
+                <ul>
+                    <li class="home"><a href="">Home</a></li>
+                    <li class="about"><a href="">About</a></li>
+                    <li class="contact"><a href="">Contact</a></li>
+                    <li class="profile" style="width: 180px; margin-right: 0px;"><span>Profile</span>
+                        <ul class="drop-down">
+                            <li class="dashboard" ><a href="">Dashboard</a></li>
+                            <li class="logout"><a href="">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="post-wrapper">
+            <div class="slider-title">Trending Posts</div>
+            <div class="post-slider">
+                <button class="slider-button">
+                <i class="fa-solid fa-chevron-left s" id="left-slider"></i>
+                </button>
+                <ul>
+                    <li class="post" id="post-1">
+                        <div class="post-image"></div>
+                        <div class="post-content">
+                            <div class="post-title"><a href="./post.html?id=101"><span></span></a></div>
+                            <div class="info">
+                                <div class="username">
+                                    <i class="fa-sharp-duotone fa-solid fa-user" id="profile-pic"></i>
+                                    <span></span>
+                                </div>
+                                <div class="date">
+                                    <i class="fa-sharp-duotone fa-solid fa-calendar-days" id="calendar"></i>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="post" id="post-2">
+                        <div class="post-image"></div>
+                        <div class="post-content">
+                            <div class="post-title"><a href="./post.html?id=102"><span></span></a></div>
+                            <div class="info">
+                                <div class="username">
+                                    <i class="fa-sharp-duotone fa-solid fa-user" id="profile-pic"></i>
+                                    <span></span>
+                                </div>
+                                <div class="date">
+                                    <i class="fa-sharp-duotone fa-solid fa-calendar-days" id="calendar"></i>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="post" id="post-3">
+                        <div class="post-image"></div>
+                        <div class="post-content">
+                            <div class="post-title"><a href="./post.html?id=103"><span></span></a></div>
+                            <div class="info">
+                                <div class="username">
+                                    <i class="fa-sharp-duotone fa-solid fa-user" id="profile-pic"></i>
+                                    <span></span>
+                                </div>
+                                <div class="date">
+                                    <i class="fa-sharp-duotone fa-solid fa-calendar-days" id="calendar"></i>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="post" id="post-4">
+                        <div class="post-image"></div>
+                        <div class="post-content">
+                            <div class="post-title"><a href="./post.html?id=104"><span></span></a></div>
+                            <div class="info">
+                                <div class="username">
+                                    <i class="fa-sharp-duotone fa-solid fa-user" id="profile-pic"></i>
+                                    <span></span>
+                                </div>
+                                <div class="date">
+                                    <i class="fa-sharp-duotone fa-solid fa-calendar-days" id="calendar"></i>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="post" id="post-5">
+                        <div class="post-image"></div>
+                        <div class="post-content">
+                            <div class="post-title"><a href="./post.html?id=105"><span></span></a></div>
+                            <div class="info">
+                                <div class="username">
+                                    <i class="fa-sharp-duotone fa-solid fa-user" id="profile-pic"></i>
+                                    <span></span>
+                                </div>
+                                <div class="date">
+                                    <i class="fa-sharp-duotone fa-solid fa-calendar-days" id="calendar"></i>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <button class="slider-button">
+                <i class="fa-solid fa-chevron-right s" id="right-slider"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="create">
+            <button class="btn"><a href="./create.html">Create</a></button>
+        </div>
+
+        
+    </main>
+
+    <div class="recent">
+        <div class="title">Recent Posts</div>
+        <div class="list">
+            <ul>
+                
+            </ul>
+        </div>
+    </div>
+
+    <!-- <footer>
+        Copyright
+    </footer> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+</html>

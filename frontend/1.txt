@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E9EFEC;
+}
+
+li {
+    list-style: none;
+    margin: 0 20px;
+    padding: 0 10px;
+}
+
+header {
+    background-color: #117f81;
+    height: 70px;
+    font-size: 25px;
+}
+
+header .first {
+    color: white;
+    float: left;
+    height: inherit;
+    margin-left: 2em;
+    font-size: 30px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    width: 8em;
+}
+
+header .second {
+    float: right;
+    height: 70px;
+}
+
+header .second nav {
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+header .second nav ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header ul li {
+    height: 100%;
+    padding: 20px 10px;
+    position: relative;
+    /* border: solid red; */
+}
+
+header ul li a {
+    color: #E9EFEC;
+    text-decoration: none;
+}
+
+header ul li ul {
+    position: absolute;
+    top: 70px;
+    display: none;
+}
+
+header ul li:hover ul {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    right: 0px;
+    flex-direction: column;
+}
+
+header ul li:hover ul li {
+    width: 100%;
+    background-color: #d5d6d6;
+}
+
+header ul li:hover ul li.dashboard a {
+    color: black;
+}
+
+header ul li:hover ul li.logout a {
+    color: red;
+}
+
+header ul li.profile {
+    color: white;
+}
+
+header ul li ul li:hover {
+    background-color: #d5d6d6;
+    color: black;
+}
+
+li.home a:hover {
+    color: aqua;
+    text-decoration: none;
+}
+
+li.about a:hover {
+    color: aqua;
+    text-decoration: none;
+}
+
+li.contact a:hover {
+    color: aqua;
+    text-decoration: none;
+}
+
+main {
+    height: 85vh;
+    color: black;
+}
+
+main .first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    font-size: 50px;
+}
+
+main .second {
+    height: 60%;
+}
+
+main .third button {
+    height: 60px;
+    width: 120px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    border-radius: 8%;
+    background-color: #EB5B00;
+}
+
+main .second ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    background-color: #2E073F;
+    color: #E9EFEC;
+    height: 10vh;
+}

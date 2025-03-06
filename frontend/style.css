@@ -1,0 +1,469 @@
+/* Existing CSS for general styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #E9EFEC; */
+    background-color: #DEE5D4;
+    height: 100%;
+    overflow: auto;
+}
+
+li {
+    list-style: none;
+    margin: 0 20px;
+    padding: 0 10px;
+}
+
+header {
+    background-color: #117f81;
+    height: 70px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search-content {
+    margin: 2px;
+}
+
+#search-text {
+    padding: 5px;
+    font-size: 20px;
+    height: 38px;
+    width: 400px;
+    border: none;
+    border-radius: 20px;
+}
+
+.search-type {
+    margin: 3px;
+}
+
+#search-filter {
+    font-size: 20px;
+    height: 38px;
+    width: 150px;
+    border: none;
+    border-radius: 20px;
+}
+
+.search-btn {
+    margin: 5px;
+    height: 38px;
+    width: 50px;
+}
+
+.search-btn button {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+header .first {
+    color: white;
+    float: left;
+    height: inherit;
+    margin-left: 2em;
+    font-size: 30px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    width: 8em;
+}
+
+header .second {
+    float: right;
+    height: 70px;
+}
+
+header .second nav {
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+header .second nav ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header ul li {
+    height: 100%;
+    padding: 20px 10px;
+    position: relative;
+}
+
+header ul li a {
+    color: #E9EFEC;
+    text-decoration: none;
+}
+
+li.profile span {
+    color: white;
+}
+
+header ul li ul.drop-down {
+    display: none; /* Hide the dropdown by default */
+    position: absolute;
+    top: 70px;
+    width: 100%;
+}
+
+header ul li.profile:hover ul.drop-down {
+    display: block; /* Show dropdown only when hovering over Profile */
+    right: 0px;
+}
+
+header ul li.profile:hover {
+    cursor: pointer;
+}
+
+header ul li ul.drop-down li {
+    width: 100%;
+    background-color: #d5d6d6;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+}
+
+header ul li ul.drop-down li a {
+    color: black;
+    padding: 10px;
+    display: block;
+}
+
+header ul li ul.drop-down li.logout a {
+    color: red;
+}
+
+header ul li ul.drop-down li:hover {
+    background-color: #c1c1c1;
+}
+
+/* Hover effect for main menu links */
+li.home a:hover,
+li.about a:hover,
+li.contact a:hover {
+    color: aqua;
+    text-decoration: none;
+}
+
+/* Rest of the styling */
+main {
+    height: 85vh;
+    color: black;
+    /* background-image: url("images/body-background.jpg");
+    background-size: cover;      /* Make the image cover the entire area */
+    /* background-position: center; Center the image */
+    /* background-repeat: no-repeat; Prevent the image from repeating */
+}
+
+.slider-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    padding: 25px;
+    /* border: solid red; */
+}
+
+.post-slider {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.post-slider ul {
+    height: 400px;
+    width: 80%;
+    margin: 0px 50px;
+    overflow: hidden;
+    /* border: solid red; */
+}
+
+.post-slider .post {
+    /* border: solid red; */
+    border-radius: 20px;
+    background-color: #FADFA1;
+    width: 390px;
+    padding: 0px;
+    height: 390px;
+    margin: 0px 15px;
+    display: inline-block;
+}
+
+.post-image {
+    margin: 0px;
+    padding: 0px;
+    height: 63%;
+}
+
+.post-content {
+    margin: 0px;
+    padding: 10px;
+    height: 47%;
+    background-color: white;
+}
+
+.post-title {
+    height: 50%;
+    font-size: 30px;
+}
+
+.info {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 10px;
+}
+
+.post .username{
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.post .username span {
+    margin-left: 5px;
+    width: 80%;
+    font-size: 25px;
+}
+
+.post .date {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.post .date span {
+    margin-left: 5px;
+    width: 80%;
+    font-size: 25px;
+}
+
+#profile-pic {
+    width: 15%;
+    font-size: 25px;
+    color: rgb(33, 158, 33);
+}
+
+#calendar {
+    width: 25px;
+    font-size: 25px;
+    color: rgb(33, 158, 33);
+}
+
+i {
+    border: none;
+    justify-content: space-around;
+}
+
+.slider-button {
+    border: none;
+    background-color: #DEE5D4;
+    cursor: pointer;
+}
+
+.s {
+    width: 50px;
+    height: 50px;
+    color: rgb(33, 158, 33);
+}
+
+.fa-chevron-left, .fa-chevron-right {
+    font-size: 50px;
+}
+
+.create {
+    margin: 20px;
+    position: absolute;
+    left: 800px;
+}
+
+.create .btn {
+    background-color: rgb(209, 209, 5);
+    text-align: center;
+    height: 80px;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.create .btn a {
+    font-size: 25px;
+    color: rgb(143, 15, 39);
+    text-decoration: none;
+}
+
+.post-title a {
+    color: black;
+    text-decoration: none;
+}
+
+.post-title a:hover {
+    text-decoration: underline;
+}
+
+.recent {
+    padding: 30px;
+}
+
+.recent .title {
+    font-size: 50px;
+}
+
+.list a {
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.list li {
+    margin: 10px 0px;
+    padding: 0px 30px;
+}
+
+.blog-article {
+    padding: 20px;
+    display: flex;
+}
+
+.blog-info {
+    background-color: white;
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    height: 85vh;
+}
+
+.user-info {
+    background-color: white;
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    height: 50vh;
+    position: relative;
+}
+
+.blog-title {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+#title {
+    height: 50px;
+    background-color: rgb(222, 221, 221);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.blog-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+#content {
+    height: 500px;
+    background-color: rgb(222, 221, 221);
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.username {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+#username {
+    height: 50px;
+    background-color: rgb(222, 221, 221);
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+#email {
+    height: 50px;
+    background-color: rgb(222, 221, 221);
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.submit {
+    position: absolute;
+    bottom: 30px; /* Positions the button at the bottom */
+    left: 50%;    /* Moves the button horizontally to the middle */
+    transform: translateX(-50%); /*Centers the button relative to its own width */
+    height: 70px;
+    width: 140px;
+}
+
+#submit {
+    background-color: #f7c758;
+    border: none;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* post.html */
+#layout {
+    margin: 15px;
+}
+
+#post-title-layout {
+    font-size: 50px;
+}
+
+#post-content-layout {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+
+/* footer {
+    background-color: #2E073F;
+    color: #E9EFEC;
+    height: 10vh;
+} */
